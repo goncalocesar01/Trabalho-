@@ -15,7 +15,9 @@ import keyboard
 def main():
     try:
         while True:
+            # First start with no database using haarcascade for taking pictures 
             Detector()
+            # after having database close with 'q', recognition will start 
             Recognizer()
            
     except KeyboardInterrupt:
