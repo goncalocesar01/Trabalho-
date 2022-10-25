@@ -88,15 +88,7 @@ def Recognizer():
                         engine.runAndWait()
                         tempo_desde_ultima_fala=tempo_de_Video
                         first_time_talking=False
-                
-                # asking person unknown       
-                else:
-                    tempo_de_falha=tempo_de_Video
-                    if first_time == True:
-                        first_time = False
-                        TsinceLastDetection=tempo_de_Video
-                    #print(TsinceLastDetection-tempo_de_falha)
-
+                        
         #Tracking the face detection                 
         for tracker in trackers:
                 h, w, _=tracker['template'].shape
